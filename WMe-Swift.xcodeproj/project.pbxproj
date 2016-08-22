@@ -18,6 +18,7 @@
 		AF1239CB1D5C5FEC00D6DF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1239C91D5C5FEC00D6DF69 /* LaunchScreen.storyboard */; };
 		AF1239D61D5C5FEC00D6DF69 /* WMe_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1239D51D5C5FEC00D6DF69 /* WMe_SwiftTests.swift */; };
 		AF1239E11D5C5FED00D6DF69 /* WMe_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1239E01D5C5FEC00D6DF69 /* WMe_SwiftUITests.swift */; };
+		AF60D7EA1D6AE29800164189 /* BridgeResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF60D7E91D6AE29800164189 /* BridgeResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		AF1239DC1D5C5FEC00D6DF69 /* WMe-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WMe-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1239E01D5C5FEC00D6DF69 /* WMe_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMe_SwiftUITests.swift; sourceTree = "<group>"; };
 		AF1239E21D5C5FED00D6DF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF60D7E91D6AE29800164189 /* BridgeResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				AF1239C01D5C5FEC00D6DF69 /* AppDelegate.swift */,
 				AF1239C21D5C5FEC00D6DF69 /* ViewController.swift */,
 				AF1239C41D5C5FEC00D6DF69 /* Main.storyboard */,
+				AF60D7E91D6AE29800164189 /* BridgeResources.swift */,
 				9C59507C1D6AC671006F51E7 /* Metric4ViewController.swift */,
 				9C59507A1D691166006F51E7 /* Metric3ViewController.swift */,
 				9C5950781D691084006F51E7 /* Metric2ViewController.swift */,
@@ -276,6 +279,7 @@
 				9C59507B1D691166006F51E7 /* Metric3ViewController.swift in Sources */,
 				9C5950771D690AD4006F51E7 /* Metric1ViewController.swift in Sources */,
 				AF1239C11D5C5FEC00D6DF69 /* AppDelegate.swift in Sources */,
+				AF60D7EA1D6AE29800164189 /* BridgeResources.swift in Sources */,
 				9C5950791D691084006F51E7 /* Metric2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
