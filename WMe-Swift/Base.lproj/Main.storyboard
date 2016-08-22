@@ -41,9 +41,6 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.99246208067516939" green="1" blue="0.98521673081984396" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="uGs-ZP-bqJ" kind="show" id="qge-uL-AZn"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-4G-Ckc">
                                 <rect key="frame" x="261" y="399" width="79" height="22"/>
@@ -384,9 +381,9 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="348-Gl-aaQ"/>
+                                        <exclude reference="CnB-uq-oFV"/>
                                         <exclude reference="PLR-AS-VUF"/>
                                         <exclude reference="YRH-3a-4cT"/>
-                                        <exclude reference="CnB-uq-oFV"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -463,9 +460,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="pxv-Ml-URp"/>
                                 <exclude reference="Uo7-et-FMx"/>
                                 <exclude reference="lr9-3I-IPc"/>
+                                <exclude reference="pxv-Ml-URp"/>
                                 <exclude reference="OQy-rS-2Xf"/>
                                 <exclude reference="148-F3-1os"/>
                                 <exclude reference="brx-TM-36f"/>
