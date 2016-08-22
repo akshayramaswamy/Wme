@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C5950771D690AD4006F51E7 /* Metric1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5950761D690AD4006F51E7 /* Metric1ViewController.swift */; };
+		9C5950791D691084006F51E7 /* Metric2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5950781D691084006F51E7 /* Metric2ViewController.swift */; };
+		9C59507B1D691166006F51E7 /* Metric3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59507A1D691166006F51E7 /* Metric3ViewController.swift */; };
+		9C59507D1D6AC671006F51E7 /* Metric4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59507C1D6AC671006F51E7 /* Metric4ViewController.swift */; };
 		AF1239C11D5C5FEC00D6DF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1239C01D5C5FEC00D6DF69 /* AppDelegate.swift */; };
 		AF1239C31D5C5FEC00D6DF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1239C21D5C5FEC00D6DF69 /* ViewController.swift */; };
 		AF1239C61D5C5FEC00D6DF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1239C41D5C5FEC00D6DF69 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C5950761D690AD4006F51E7 /* Metric1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric1ViewController.swift; sourceTree = "<group>"; };
+		9C5950781D691084006F51E7 /* Metric2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric2ViewController.swift; sourceTree = "<group>"; };
+		9C59507A1D691166006F51E7 /* Metric3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric3ViewController.swift; sourceTree = "<group>"; };
+		9C59507C1D6AC671006F51E7 /* Metric4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric4ViewController.swift; sourceTree = "<group>"; };
 		AF1239BD1D5C5FEC00D6DF69 /* WMe-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WMe-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1239C01D5C5FEC00D6DF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF1239C21D5C5FEC00D6DF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +108,10 @@
 				AF1239C01D5C5FEC00D6DF69 /* AppDelegate.swift */,
 				AF1239C21D5C5FEC00D6DF69 /* ViewController.swift */,
 				AF1239C41D5C5FEC00D6DF69 /* Main.storyboard */,
+				9C59507C1D6AC671006F51E7 /* Metric4ViewController.swift */,
+				9C59507A1D691166006F51E7 /* Metric3ViewController.swift */,
+				9C5950781D691084006F51E7 /* Metric2ViewController.swift */,
+				9C5950761D690AD4006F51E7 /* Metric1ViewController.swift */,
 				AF1239C71D5C5FEC00D6DF69 /* Assets.xcassets */,
 				AF1239C91D5C5FEC00D6DF69 /* LaunchScreen.storyboard */,
 				AF1239CC1D5C5FEC00D6DF69 /* Info.plist */,
@@ -260,7 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1239C31D5C5FEC00D6DF69 /* ViewController.swift in Sources */,
+				9C59507D1D6AC671006F51E7 /* Metric4ViewController.swift in Sources */,
+				9C59507B1D691166006F51E7 /* Metric3ViewController.swift in Sources */,
+				9C5950771D690AD4006F51E7 /* Metric1ViewController.swift in Sources */,
 				AF1239C11D5C5FEC00D6DF69 /* AppDelegate.swift in Sources */,
+				9C5950791D691084006F51E7 /* Metric2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +503,7 @@
 				AF1239E71D5C5FED00D6DF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF1239E81D5C5FED00D6DF69 /* Build configuration list for PBXNativeTarget "WMe-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +512,7 @@
 				AF1239EA1D5C5FED00D6DF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF1239EB1D5C5FED00D6DF69 /* Build configuration list for PBXNativeTarget "WMe-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +521,7 @@
 				AF1239ED1D5C5FED00D6DF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
