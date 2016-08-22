@@ -345,8 +345,8 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="1DA-PM-09B"/>
-                                        <exclude reference="IfR-6I-iPG"/>
                                         <exclude reference="Bje-DQ-GNi"/>
+                                        <exclude reference="IfR-6I-iPG"/>
                                     </mask>
                                 </variation>
                             </button>
