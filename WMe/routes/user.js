@@ -15,7 +15,9 @@ router.get('/userID/:phoneNumber', function(req, res, next) {
   })
 });
 
-/* GET user info by name, riskier*/
+/* GET user info by name, riskier.
+  @TODO - is this necessary? I don't think so
+*/
 router.get('/userID/:name', function(req, res, next){
   User.find({name: req.params.name}, function(err, user){
     if(err){
@@ -30,11 +32,11 @@ router.get('/userID/:name', function(req, res, next){
 /* POST user, i.e., create a new user, by phoneNumber*/
 router.post('/', function(req,res, next){
   var newUser = new User({
-    name: req.body.name
+    name: req.body.name,
     phoneNumber: req.body.phoneNumber,
     email: req.body.email,
     dorm: req.body.dorm,
-    dorm: req.body.RF,
+    dormRF: req.body.RF,
     friends: req.body.friends
   });
   newUser.save(function(err){
@@ -42,9 +44,9 @@ router.post('/', function(req,res, next){
       console.log("User not saved successfully")
       res.send(500)
     }
+    res.send(200)
     console.log("User saved successfully!")
   });
-  res.send(200)
 })
 
 module.exports = router;

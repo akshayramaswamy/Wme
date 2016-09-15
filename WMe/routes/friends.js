@@ -1,9 +1,10 @@
+/* All routes in this fall pertain to CRUD operations for friends*/
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var User = require('../model/person');
 
-/* Finds friends for given phone number and sends back list */
+/* Finds all friends for given user (searched by phone number) and sends back list of those friends*/
 router.get('/:phoneNumber', function(req, res, next){
   User.find({phoneNumber: req.params.phoneNumber}, function(err, user){
     if(err){
@@ -17,7 +18,7 @@ router.get('/:phoneNumber', function(req, res, next){
   });
 });
 
-/* Updates friends by adding new friend to list of friends for given phone number */
+/* Updates friends by adding new friend to list of friends for given phone number i.e. user */
 router.post('/', function(req, res, next){
   User.find({phoneNumber: req.body.phoneNumber}, function(err, user){
     if(err){
@@ -46,7 +47,10 @@ router.post('/', function(req, res, next){
   });
 });
 
-/* Gets name of friend with lowest score */
+/* Gets name of friend with lowest score
+    @TODO Figure out how the hell asynchronous for loops work -- there may be trouble in the friends.forEach line,line 63,
+    as I am unsure if the asynchronous request inside the loop work. I'm doubtful.
+*/
 router.get("/low/:phoneNumber", function(req, res, next){
   User.find({phoneNumber: req.params.phoneNumber}, function(err, user){
     if(err){

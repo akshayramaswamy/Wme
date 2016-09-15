@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+/* Set up routes for specified endpoints. Routes are actually defined in ./routes folder */
 app.use('/users', users);
 app.use('/friends', friends);
 app.use('./scores', scores);
