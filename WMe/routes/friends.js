@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var User = require('../model/person');
+var User = require('../models/person');
 
 /* Finds all friends for given user (searched by phone number) and sends back list of those friends*/
 router.get('/:phoneNumber', function(req, res, next){
