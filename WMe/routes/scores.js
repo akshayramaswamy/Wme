@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var User = require('../model/person');
+var User = require('../models/person');
 
 /* Get score for given user
     @TODO -- use date object to actually compute scores. When I return user.score, that's a placeholder. Figure out how to use date objects

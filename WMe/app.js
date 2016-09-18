@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-var User = require('./model/person');
-var users = require('./routes/users');
+var User = require('./models/person');
+var users = require('./routes/user');
 var friends = require('./routes/friends');
 var scores = require('./routes/scores');
 

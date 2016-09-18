@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose')
-var User = require('../model/person')
+var User = require('../models/person')
 
 /* GET user info by phoneNumber*/
 router.get('/userID/:phoneNumber', function(req, res, next) {
