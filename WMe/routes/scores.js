@@ -14,7 +14,23 @@ router.get('/:phoneNumber', function(req, res, next){
       res.send(400);
     } else{
       console.log("user found, sending score");
-      res.json(user.scores);
+      
+	/* Weekly score logic = total score over past 7 days / number of entries in past 7 days			
+	   @TODO - check if this is right way to loop through keys in JS, think of edge cases
+		number of milliseconds in a week = 604800000
+	*/
+	var scoreMap = user.scores;
+	var weeklyTotal = 0;
+	var entryCounter = 0;
+	var todayDate = Date();
+	Object.keys(scoreMap).forEach(function(scoreDate) {
+		if (todayDate.getTime() - scoreDate.getTime <= 604800000){
+			entryCounter++;
+			weeklyTotal+= scoreMap[scoreDate];
+		}	 	
+	});
+	var avgWeeklyScore = weeklyTotal/entryCounter; 
+	res.json(avgWeeklyScore);
     }
   });
 });
@@ -24,7 +40,7 @@ router.get('/:phoneNumber', function(req, res, next){
 */
 router.post('/', function(req, res, next){
   newScore = req.body.score;
-  date = req.body.date;
+  var date = new Date();
   User.find({phoneNumber: req.body.phoneNumber}, function(err, user){
     if(err){
       console.log("user not found");
